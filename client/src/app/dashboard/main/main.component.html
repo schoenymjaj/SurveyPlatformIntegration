@@ -1,0 +1,91 @@
+<app-cirds-dashboard *ngIf="false"></app-cirds-dashboard>
+<div *ngIf="false">
+    <app-cirds-piechart></app-cirds-piechart>
+</div>
+<mat-grid-list [cols]="maxColumnCount" rowHeight="500px">
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>Top 5 Hazards - Relative Risk
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-datasource-counts></app-datasource-counts>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>Top 5 Hazards - Probability
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-integrity-check></app-integrity-check>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>Top 5 Hazards - Vulnerability
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-rts-docs-piechart></app-rts-docs-piechart>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>Top 5 Hazards - Consequence
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-risc-candy1-piechart></app-risc-candy1-piechart>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>    
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>Top 5 Hazards - Criticality
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-risc-candy2-piechart></app-risc-candy2-piechart>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="mat-grid-tile">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>RISC Community Activity
+                </mat-card-title>
+                <mat-card-subtitle>risc@hhs.gov</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/img/horizon.jpg" class="mat-image-height">
+            <mat-card-content>
+                <app-ingest-status [ingestType]="ucsfIngestType"></app-ingest-status>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>

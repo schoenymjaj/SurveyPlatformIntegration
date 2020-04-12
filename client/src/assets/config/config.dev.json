@@ -1,0 +1,82 @@
+{
+    "proxyPort": 8101,
+    "poc": false,
+    "mlPort": 8107,
+    "startIngestTimeout": 1000,
+    "defaultIngestTaskId": 1,
+    "refreshDataTimeinMsecs": 10000,
+    "ingest": {
+        "rtsStartUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestRts?action=start&mlport=8080",
+            "dummy": "/assets/data/rts-start-ingest-response.json"
+        },
+        "rtsStopUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "AutoIngest/IngestRts?action=stop&taskid=TASKIDPLACEHOLDER&mlport=8080",
+            "dummy": "/assets/data/rts-stop-ingest-response.json"
+        },
+        "rtsStatusUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestRts?action=status&taskid=TASKIDPLACEHOLDER&mlport=8080",
+            "dummy": "/assets/data/rts-ingest-status-response.json"
+        },
+        "CallRestRtsGetMostRecentIngestStatus": {
+            "poc": false,
+            "domain": "",
+            "url": "/v1/documents?uri=/status/rts/ingest-date.json&mlport=8120",
+            "dummy": "/assets/data/rts-get-ingest-date-status-response.json"
+        },
+        "ucsfStartUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestUcsf?action=start&mlport=8080",
+            "dummy": "/assets/data/ucsf-start-ingest-response.json"
+        },
+        "ucsfStartwithStartDateUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestUcsf?action=startSTARTDATEPLACEHOLDER&mlport=8080",
+            "dummy": "/assets/data/ucsf-start-ingest-with-date-response.json"
+        },
+        "ucsfStopUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestUcsf?action=stop&taskid=TASKIDPLACEHOLDER&mlport=8080",
+            "dummy": "/assets/data/ucsf-stop-ingest-response.json"
+        },
+        "ucsfStatusUrl": {
+            "poc": false,
+            "domain": "",
+            "url": "/AutoIngest/IngestUcsf?action=status&taskid=TASKIDPLACEHOLDER&mlport=8080",
+            "dummy": "/assets/data/ucsf-ingest-status-response.json"
+        },
+        "CallRestUcsfGetMostRecentIngestStatus": {
+            "poc": false,
+            "domain": "",
+            "url": "/v1/documents?uri=/status/ucsf/ingest-date.json&mlport=8120",
+            "dummy": "/assets/data/ucsf-get-ingest-date-status-response.json"
+        }
+    },
+    "integrityCheckUrl": {
+        "poc": false,
+        "domain": "",
+        "url": "/v1/resources/integrityCheck?mlport=8127",
+        "dummy": "/assets/data/integrity-check-response.json"
+    },
+    "generalDataQueryUrl": {
+        "poc": false,
+        "domain": "",
+        "url": "/v1/resources/getDocCounts",
+        "dummy": "/assets/data/general-data-query-response.json"
+    },
+    "getSynonymDocUrl": {
+        "poc": false,
+        "domain": "",
+        "url": "/v1/documents?uri=/ctpThesauri/as.xml",
+        "dummy": "/assets/data/get-synonym-doc-response.xml"
+    }
+}

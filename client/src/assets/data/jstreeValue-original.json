@@ -1,0 +1,594 @@
+{
+    "core": {
+        "data": [
+            {
+                "text": "All Documents",
+                "state": {
+                    "selected": true,
+                    "opened": true
+                },
+                "children": [
+                    {
+                        "text": "Administrative Documents",
+                        "state": {
+                            "selected": false
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "CDC",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Coding Form",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "7600 A/B",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "MOU",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Interagency Agreement (IAA)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "IAA Modification",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Budget Information",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "Contracts/Other",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Performance Review (PA)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Budget Information",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Contract",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Coding Form",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Evaluations",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Independent Government Cost Estimate (IGCE)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Invoice",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Justification Memo",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Modification",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Milestone Deliverables",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Proposals (Technical or Business)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Request for Proposal",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Statement of Work",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Task Order/Option",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "FDA",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Coding Form",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Prioritzation Plan",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Performance Agreement Amendments",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Budget Information",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Performance Agreement (PA)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "NIH",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Pre-Award",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Peer Review Summary Statement",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Grant Applications",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "PI Response to Summary Statement",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Funding Opportunity Announcement (FOA)",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "CTP Reviews",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "MOU",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Interagency Agreement",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "IDDA",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Post-Award",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Coding Form",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Prioritization Plan",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Pay Memo",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Notice of Award",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Dissemination/Reports",
+                        "state": {
+                            "selected": false
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "Public Distribution",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "Reports",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "Results",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Required Approval",
+                        "state": {
+                            "selected": false
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "CTP Approvals",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "IACUC",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Continuing Renewal",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Termination Package",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    },
+                                    {
+                                        "text": "Draft Protocol",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Initial IACUC Approved Protocol",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "IACUC Amendment Protocol",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "IRB",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Continuing Renewal",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    },
+                                    {
+                                        "text": "Draft Protocol",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Initial IRB Approved Protocol Materials",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Study Instruments",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "IRB Amendment Protocol",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    },
+                                    {
+                                        "text": "Termination Package",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "OMB",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Initial Package",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    },
+                                    {
+                                        "text": "OMB Generated (Initial Package)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder"
+                                    },
+                                    {
+                                        "text": "Renewal",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "OMB Generated (Renewal)",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Amendment",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "OMB Generated (Amendment)",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-folder"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "Personnel Records",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "Study Monitoring",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+<h2 mat-dialog-title>
+    {{title}}</h2>
+
+
+<mat-dialog-content [formGroup]="form">
+
+    <mat-form-field>
+
+        <input matInput readonly placeholder="Status" formControlName="narrativeFormControl">
+
+    </mat-form-field>
+
+    <mat-form-field>
+
+        <input matInput readonly [matDatepicker]="ingestDatePerformed" placeholder="Date Most Recent Ingest Performed" formControlName="ingestDatePerformedFormControl">
+
+        <mat-datepicker-toggle matSuffix [for]="ingestDatePerformed">
+
+        </mat-datepicker-toggle>
+
+        <mat-datepicker #ingestDatePerformed></mat-datepicker>
+
+    </mat-form-field>
+
+    <mat-form-field>
+
+        <textarea matInput readonly placeholder="{{statusLabel}}" formControlName="statusFormControl">
+            {{ingestStatus}}
+        </textarea>
+
+    </mat-form-field>
+
+    <mat-form-field *ngIf="ingestType=='ucsf'">
+
+        <input matInput [matDatepicker]="startLoadDateOfRecordsToIngest" placeholder="Start Load Date of Records to Ingest" [min]="startLoadDateMinDate" formControlName="startLoadDateOfRecordsToIngestFormControl">
+
+        <mat-datepicker-toggle matSuffix [for]="startLoadDateOfRecordsToIngest">
+
+        </mat-datepicker-toggle>
+
+        <mat-datepicker #startLoadDateOfRecordsToIngest></mat-datepicker>
+
+        <mat-error algin="end" *ngIf="form.controls.startLoadDateOfRecordsToIngestFormControl.hasError('required')">
+            A valid start date mm/dd/yyyy is required
+        </mat-error>
+        <mat-error algin="end" *ngIf="form.controls.startLoadDateOfRecordsToIngestFormControl.hasError('matDatepickerMin')">
+            A valid date mm/dd/yyyy must be greater than the last date performed ({{ingestDatePerformedValue | date: 'shortDate'}})
+        </mat-error>
+
+        <!--
+        <mat-error algin="end" *ngIf="form.controls.startLoadDateOfRecordsToIngestFormControl.hasError('validateDate')">
+            The date must be greater than the last date ingest was performed
+        </mat-error>
+        -->
+
+
+
+    </mat-form-field>
+
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+
+    <button class="mat-raised-button" (click)="close()">
+        Close
+    </button>
+
+
+    <button *ngIf="!isIngestActive()" [disabled]="!canIngestStart()" class="mat-raised-button mat-primary" (click)="startIngest()">
+        Start Ingest
+    </button>
+    <button *ngIf="isIngestActive()" class="mat-raised-button mat-primary" (click)="stopIngest()">
+        Stop Ingest
+    </button>
+
+</mat-dialog-actions>

@@ -1,0 +1,58 @@
+import { Component, OnInit } from '@angular/core';
+import { map } from 'rxjs/operators';
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+
+@Component({
+  selector: 'app-cirds-dashboard',
+  templateUrl: './cirds-dashboard.component.html',
+  styleUrls: ['./cirds-dashboard.component.css']
+})
+export class CirdsDashboardComponent implements OnInit {
+  defaultContent = 'CIRDs is the CTP Integrated Research Data System, which allows researchers, librarians, and toxicologists at the FDA to perform integrated searches and find patterns between tobacco usage and human health effects.';
+
+  /** Based on the screen size, switch from standard to one column per row */
+  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return [
+          // { title: 'Card 1', cols: 1, rows: 1 },
+          // { title: 'Card 2', cols: 1, rows: 1 },
+          // { title: 'Card 3', cols: 1, rows: 1 },
+          // { title: 'Card 4', cols: 1, rows: 1 }
+
+          { title: 'Card 1', cols: 1, rows: 1 },
+          { title: 'Card 2', cols: 2, rows: 1 },
+          { title: 'Card 3', cols: 1, rows: 1 },
+          { title: 'Card 4', cols: 2, rows: 1 },
+          { title: 'Card 5', cols: 1, rows: 1 },
+          { title: 'Card 6', cols: 2, rows: 1 },
+          { title: 'Card 7', cols: 2, rows: 1 },
+
+        ];
+      }
+
+      return [
+        // { title: 'Card 1', cols: 2, rows: 1 },
+        // { title: 'Card 2', cols: 1, rows: 1 },
+        // { title: 'Card 3', cols: 1, rows: 2 },
+        // { title: 'Card 4', cols: 1, rows: 1 }
+
+        { title: 'Card 1', cols: 1, rows: 1 },
+        { title: 'Card 2', cols: 1, rows: 1 },
+        { title: 'Card 3', cols: 1, rows: 1 },
+        { title: 'Card 4', cols: 1, rows: 1 },
+        { title: 'Card 5', cols: 1, rows: 1 },
+        { title: 'Card 6', cols: 1, rows: 1 },
+        { title: 'Card 7', cols: 1, rows: 1 },
+        { title: 'Card 8', cols: 1, rows: 1 }
+
+      ];
+    })
+  );
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+  }
+
+}

@@ -1,0 +1,21 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+
+  .mat-card {
+    width: 80%;
+    margin: auto;
+}
+
+.mat-card .full-width {
+    width: 100%;
+}
+
+.mat-card .mat-card-actions {
+    display: block;
+    text-align: right;
+}
+
+.jsonResponse {
+    height: 200px;
+}

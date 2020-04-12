@@ -1,0 +1,53 @@
+<div>
+    <div style="text-align: center">
+        <div [ngClass]="{ 'PaddingForRTS':(ingestType == 'rts'), 'PaddingForUCSF':(ingestType == 'ucsf') }">
+            <span style="font-size: 16px;font-weight:bold">{{narrative}}</span>
+        </div>
+    </div>
+    <div class="Table">
+        <div class="Row">
+            <div class="Cell" style="font-weight: bold">
+                Total Assessments:
+            </div>
+            <div *ngIf="ingestDatePerformed != undefined" class="Cell">
+                {{8903}}
+            </div>
+            <div *ngIf="ingestDatePerformed == undefined" class="Cell">
+                UNKNOWN
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell" style="font-weight: bold">
+                Total Users:
+            </div>
+            <div class="Cell">
+                {{31566}}
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell" style="font-weight: bold">
+                Total Views:
+            </div>
+            <div class="Cell">
+                {{106721}}
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell" style="font-weight: bold">
+                Top Riskiest Hazard:
+            </div>
+            <div class="Cell">
+                Hurricane
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell" style="font-weight: bold">
+                Top Vulnerable Hazard:
+            </div>
+            <div class="Cell">
+                Active Shooter
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+<mat-dialog-content>
+    <h2 mat-dialog-title>
+        {{title}}</h2>
+
+
+    <mat-form-field>
+
+        <!--
+        <textarea style="font-size: 12px" matInput placeholder="Synonym XML Value" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="20" cdkAutosizeMaxRows="20">
+            {{synonymsXML}}
+        </textarea>
+-->
+
+        <textarea style="font-size: 12px" matInput placeholder="Synonym XML Value" rows="23">
+            {{synonymsXML}}
+        </textarea>
+
+
+    </mat-form-field>
+
+
+
+
+    <div style="text-align: right">
+        <button class="mat-raised-button mat-primary" (click)="close()">
+            Close
+        </button>
+    </div>
+
+</mat-dialog-content>

@@ -1,0 +1,39 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="push">
+        <!--
+        <button color="primary" mat-button routerLink="/dashboard">Dashboard</button>
+        <button color="primary" mat-button routerLink="/dashboard/survey">Profile</button>
+        <button color="primary" mat-button routerLink="/dashboard/survey">Hazard</button>
+        <button color="primary" mat-button routerLink="/dashboard/survey">Vulnerability</button>
+        <button color="primary" mat-button routerLink="/dashboard/survey">Consequences</button>
+        <button color="primary" mat-button routerLink="/dashboard/exerciser">Exerciser</button>
+        <button color="primary" mat-button routerLink="/dashboard/jstree">jstree</button>
+        -->
+
+        <div style="width: 300;height: 100;background-color: white;;margin-top:5px;">
+            <div id="frmt" class="cattree"></div> 
+        </div>  
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                
+                <button mat-icon-button (click)="drawer.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+
+                <span class="cirds-title" routerLink="/dashboard">
+                    {{title}}
+                </span>
+
+                <span class="spacer"></span>
+
+                <button mat-button class="cirds-top-menu-button" (click)="doJQuery()">JQuery</button>
+                <button mat-button class="cirds-top-menu-button" (click)="openTab('https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3L60R4gVcYmhkEd')">Survey</button>
+
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

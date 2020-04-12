@@ -1,0 +1,63 @@
+<div style="text-align: center">
+    <div style="padding-bottom: 23px">
+        <span style="font-size: 16px;font-weight:bold">RISC Hazard - Relative Risk Scores</span>
+    </div>
+</div>
+<div class="Table">
+    <div class="Heading">
+        <div class="Cell">
+            <p>Hazard</p>
+        </div>
+        <div class="Cell">
+            <p>Risk Score</p>
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            Hurricane
+        </div>
+        <div class="Cell">
+            {{generalDataQueryResponse.rts | number: '1.'}}
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            Flood
+        </div>
+        <div class="Cell">
+            {{generalDataQueryResponse["rts-doc"] | number: '1.'}}
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            Cyber
+        </div>
+        <div class="Cell">
+            {{generalDataQueryResponse.tckb | number: '1.'}}
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            Electrical Failure
+        </div>
+        <div class="Cell">
+            {{generalDataQueryResponse.ucsf | number: '1.'}}
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            Active Shooter
+        </div>
+        <div class="Cell">
+            {{generalDataQueryResponse.idat | number: '1.'}}
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell" style="font-weight: bold">
+            TOTAL
+        </div>
+        <div class="Cell" style="font-weight: bold">
+            {{getTotalCirdsRecords() | number: '1.'}}
+        </div>
+    </div>
+</div>

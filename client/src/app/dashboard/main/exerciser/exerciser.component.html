@@ -1,0 +1,121 @@
+<style>
+    .api-choices {
+        border-style: solid;
+        border-color: blue;
+    }
+    .is-invalid {
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+        color:red;
+    }
+    .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #00ff00;
+    }
+
+    /*this works with [ngClass] *
+    .myClass { 
+        border-style: solid;
+        border-width: 3px;
+        border-color: magenta;
+    } 
+    */
+</style>
+
+<mat-card>
+    <mat-card-title>MarkLogic REST API Exerciser</mat-card-title>
+    <mat-card-content>
+        <form [formGroup] = "httpForm">
+            <mat-form-field class="full-width" [ngClass]="'myClass'">
+                <input #urlTag matInput type="url" placeholder="Enter REST API URL" 
+                [class.is-invalid]="urlString.invalid && urlString.touched"
+                formControlName="urlFormControl">
+                <mat-hint align="end">Hint: http://ip.port/domain-name.com</mat-hint>
+                <!--
+                <mat-error align="end">
+                    Please enter a valid MarkLogic REST API URL
+                </mat-error>
+                -->
+                <div *ngIf="urlString.invalid && urlString.touched">
+                    <mat-error align="end" *ngIf="urlString.errors?.required">Url is required</mat-error>
+                    <mat-error align="end" *ngIf="urlString.errors?.minlength">Url must be greater than 5 characters</mat-error> 
+                    <mat-error align="end" *ngIf="urlString.errors?.urlInvalid">Url "{{urlString.errors?.urlInvalid.value}}" prefix is invalid</mat-error> 
+                </div>
+
+            </mat-form-field>
+
+            <div>
+                <mat-form-field style="margin:10px">
+                    <mat-label>Enter Protocol</mat-label>
+                    <mat-select formControlName="protocolFormControl">
+                        <mat-option>--</mat-option>
+                        <mat-option *ngFor="let protocol of protocols" [value]="protocol">
+                            {{protocol}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error>Please choose a protocol</mat-error>
+                </mat-form-field>
+
+                <mat-form-field style="margin:10px">
+                    <mat-label>Enter Auth Type</mat-label>
+                    <mat-select formControlName="authTypeFormControl" required>
+                        <mat-option>--</mat-option>
+                        <mat-option *ngFor="let authType of authTypes" [value]="authType">
+                            {{authType}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error>Please choose an auth type</mat-error>
+                </mat-form-field>
+
+                <mat-form-field style="margin:10px">
+                        <input matInput type="string" placeholder="Enter Auth String" formControlName="authStringFormControl">
+                </mat-form-field>
+        
+                <mat-form-field style="margin:10px">
+                    <input matInput type="number" placeholder="Enter ML Port" formControlName="mlportFormControl">
+                </mat-form-field>
+        
+            </div>
+
+            <mat-form-field>
+                    <mat-label>Enter Response Format Type</mat-label>
+                    <mat-select formControlName="responseTypeFormControl" required>
+                        <mat-option>--</mat-option>
+                        <mat-option *ngFor="let responseType of responseTypes" [value]="responseType">
+                            {{responseType}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-error>Please choose a protocol</mat-error>
+            </mat-form-field>
+
+            <mat-selection-list formControlName="urlChoiceFormControl" class="api-choices" (selectionChange)="selectNewUrlChoice($event)">
+                <p>API Choices</p>
+                <mat-list-option *ngFor="let ApiUrl of ApiUrls" [value]="ApiUrl">
+                    {{ApiUrl}}
+                </mat-list-option>
+            </mat-selection-list> 
+              
+            <div formArrayName="additionalContent" *ngFor="let content of additionalContent.controls; let i=index">
+                <input type="text" class="form-control" placeholder="Enter New Content" [formControlName]="i">
+            </div>
+    
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <!--<button mat-raised-button color="primary" (click)="openRepDialog()">SAVE</button>-->
+        <button mat-raised-button color="primary" (click)="displayFormValue()">LOG</button>
+        <button mat-raised-button color="primary" (click)="addAdditionalContent()">ADD CONTENT</button>
+        <button mat-raised-button color="primary" (click)="resetForm()">RESET</button>
+        <button mat-raised-button color="primary" (click)="performRestAPICall()">SEND</button>
+    </mat-card-actions>
+    <p>
+        httpForm.value:{{httpForm.value | json}}<br/>
+        urlFormControl.invalid:{{urlString.invalid}}<br/>
+        urlFormControl.touched:{{urlString.touched}}<br/>
+        urlTag.className{{urlTag.className}}<br/>
+        urlChoiceFormControl.invalid:{{httpForm.get('urlChoiceFormControl').invalid}}<br/>
+        urlString.errors?.urlInvalid: {{urlString.errors?.urlInvalid | json}}<br/>
+        urlString.errors?.minlength: {{urlString.errors?.minlength | json}}<br/>
+        <!--additionalContent:{{additionalContent.controls | json}}-->
+    </p>
+</mat-card>

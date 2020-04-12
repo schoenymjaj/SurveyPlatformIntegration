@@ -1,0 +1,34 @@
+<div>
+    <div>
+        <div style="text-align: center">
+            <div style="padding-bottom: 29px">
+                <span style="font-size: 16px;font-weight:bold">CIRDs Card Placeholder</span>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors" [legend]="pieChartLegend">
+            </canvas>
+        </div>
+    </div>
+</div>
+<div *ngIf="false" class="grid-container" style="width: 40%">
+    <mat-grid-list cols="1" rowHeight="38px">
+        <mat-grid-tile style="width: 40%">
+            <button mat-button mat-raised-button color="primary" style="width: 40%;text-align:left" (click)="pieChartLegend=!pieChartLegend">Toggle
+                Legend</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-button mat-raised-button color="primary" style="width: 40%;text-align:left" (click)="changeLabels()">Change Labels</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-button mat-raised-button color="primary" style="width: 40%;text-align:left" (click)="addSlice()">Add Slice</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-button mat-raised-button color="primary" style="width: 40%;text-align:left" (click)="removeSlice()">Remove Slice</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <button mat-button mat-raised-button color="primary" style="width: 40%;text-align:left" (click)="changeLegendPosition()">Change Legend
+                Position</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
