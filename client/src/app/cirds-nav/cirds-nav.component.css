@@ -24,7 +24,8 @@
 .cirds-title {
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 44px
+    font-size: 44px;
+    padding-left: 25px;
 }
 
 .cirds-top-menu-button {

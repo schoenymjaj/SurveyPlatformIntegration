@@ -23,9 +23,15 @@ import { RiscCandy2PiechartComponent } from './main/risc-candy2-piechart/risc-ca
 import { SurveyComponent } from './main/survey/survey.component';
 import { JstreeComponent } from './main/jstree/jstree.component';
 
+import { SearchBarComponent } from './main/assessment-library/search-bar/search-bar.component';
+import { SearchPageComponent } from './main/assessment-library/search-page/search-page.component';
+
+
 @NgModule({
   declarations: [MainComponent, CirdsDashboardComponent, CirdsPiechartComponent, 
-                ExerciserComponent, DatasourceCountsComponent, IntegrityCheckComponent, RtsDocsPiechartComponent, RiscCandy1PiechartComponent, RiscCandy2PiechartComponent, IngestStatusComponent, SurveyComponent, JstreeComponent],
+                ExerciserComponent, DatasourceCountsComponent, IntegrityCheckComponent, RtsDocsPiechartComponent,
+                RiscCandy1PiechartComponent, RiscCandy2PiechartComponent, IngestStatusComponent, SurveyComponent,
+                JstreeComponent, SearchBarComponent, SearchPageComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

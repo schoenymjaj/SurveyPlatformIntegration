@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "title": "RISC Hospital Vulnerability Comprehensive",
+        "category": "hospital",
+        "type": "vulnerability",
+        "tags": "hospital, facility, direct patient care, brick and mortar, comprehensive"
+    },
+    {
+        "id": 2,
+        "title": "RISC Hospital Vulnerability Lite",
+        "category": "hospital",
+        "type": "vulnerability",
+        "tags": "hospital, facility, direct patient care, brick and mortar, lite"
+    },
+    {
+        "id": 3,
+        "title": "RISC Dialysis Center Vulnerability",
+        "category": "dialysis center",
+        "type": "vulnerability",
+        "tags": "dialysis, facility, direct patient care, brick and mortar"
+    },
+    {
+        "id": 4,
+        "title": "RISC Blood Bank Vulnerability",
+        "category": "blood bank",
+        "type": "vulnerability",
+        "tags": "blood, facility, direct patient care, brick and mortar"
+    },
+    {
+        "id": 5,
+        "title": "RISC Public Health Vulnerability",
+        "category": "public health",
+        "type": "vulnerability",
+        "tags": "public health, government, jurisdiction"
+    },
+    {
+        "id": 6,
+        "title": "RISC At-Risk Populations Vulnerability",
+        "category": "considerations",
+        "type": "vulnerability",
+        "tags": "at-risk, social vulnerability"
+    },
+    {
+        "id": 7,
+        "title": "RISC Supply Chain Vulnerability",
+        "category": "considerations",
+        "type": "vulnerability",
+        "tags": "supply chain, dependencies"
+    }
+]
