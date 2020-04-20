@@ -19,7 +19,7 @@ declare var $: any;
   styleUrls: ['./cirds-nav.component.css']
 })
 export class CirdsNavComponent implements OnInit {
-  title = 'ASPR RISC Next Generation';
+  title = 'ASPR RISC Next Generation POC';
   localConfig;
 
   constructor(private breakpointObserver: BreakpointObserver,

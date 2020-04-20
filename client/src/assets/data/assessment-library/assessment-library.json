@@ -36,8 +36,8 @@
     },
     {
         "id": 6,
-        "title": "RISC Hospital Vulnerability Lite",
-        "category": "hospital",
+        "title": "RISC Vulnerability Lite (Accession)",
+        "category": "general",
         "type": "vulnerability",
         "tags": "hospital, facility, direct patient care, brick and mortar, lite"
     },
