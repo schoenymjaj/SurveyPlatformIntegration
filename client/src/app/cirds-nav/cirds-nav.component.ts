@@ -19,7 +19,7 @@ declare var $: any;
   styleUrls: ['./cirds-nav.component.css']
 })
 export class CirdsNavComponent implements OnInit {
-  title = 'ASPR RISC Next Gen';
+  title = 'ASPR RISC Next Generation';
   localConfig;
 
   constructor(private breakpointObserver: BreakpointObserver,
@@ -31,8 +31,10 @@ export class CirdsNavComponent implements OnInit {
 
   ngOnInit(): void {
 
+
     //this.initialTree("/assets/data/jstreeLibrary/assessment-lib-jstree-value.json", this.initialSelectTreeView);
-    this.initialTree("/assets/data/jstreeLibrary/initial-jstree-value.json", this.initialSelectTreeView);
+    //this.initialTree("/assets/data/jstreeLibrary/initial-jstree-value.json", this.initialSelectTreeView);
+    this.initialTree("/assets/data/jstreeLibrary/existing-archive-assessment-jstree.json", this.initialSelectTreeView);
 
   } //ngInit
 
@@ -55,6 +57,10 @@ export class CirdsNavComponent implements OnInit {
             
     //this.initialTree("/assets/data/jstreeLibrary/assessment-lib-jstree-value.json", this.initialSelectTreeView);
   } //viewAssessmentLibrary() {
+
+  viewDashboard() {
+    this.router.navigate(['/dashboard/main']);
+  }
 
   initialSelectTreeView (categoryName: string, router: Router) {
     switch (categoryName) {

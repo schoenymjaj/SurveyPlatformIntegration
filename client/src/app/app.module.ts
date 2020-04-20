@@ -3,7 +3,7 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent, SafePipe  } from './app.component';
 
 // Material section
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,11 +29,10 @@ export function initializeApp1(appInitService: AppInitService) {
   }
 }
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
+    SafePipe,
     CirdsNavComponent,
     IngestDialogComponent,
     SynonymsDialogComponent    
@@ -54,6 +53,7 @@ export function initializeApp1(appInitService: AppInitService) {
     { provide: APP_INITIALIZER,useFactory: initializeApp1, deps: [AppInitService], multi: true}
   ],
   bootstrap: [AppComponent],
-  entryComponents: [IngestDialogComponent, SynonymsDialogComponent]
+  entryComponents: [IngestDialogComponent, SynonymsDialogComponent],
+  exports: [SafePipe]
 })
 export class AppModule { }

@@ -1,0 +1,472 @@
+{
+    "core": {
+        "data": [
+            {
+                "text": "RISC NextGen",
+                "state": {
+                    "selected": false,
+                    "opened": true
+                },
+                "children": [
+                    {
+                        "text": "Settings",
+                        "state": {
+                            "selected": false,
+                            "opened": true
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "General",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-file"
+                            },
+                            {
+                                "text": "Healthcare System Profile",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-file"
+                            },
+                            {
+                                "text": "Current Assessments",
+                                "state": {
+                                    "selected": false,
+                                    "opened": true
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Hazards (All)",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "RISC Hospital Vulnerability Lite",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "RISC Hospital Consequence Lite",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "RISC Hospital Criticality Lite",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                    
+                                ]
+        
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Dashboard",
+                        "state": {
+                            "selected": true
+                        },
+                        "icon": "jstree-folder"
+                    },
+                    {
+                        "text": "Reporting",
+                        "state": {
+                            "selected": false
+                        },
+                        "icon": "jstree-folder"
+                    },
+                    {
+                        "text": "Assessment",
+                        "state": {
+                            "selected": false,
+                            "opened": true
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "Hazards",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Active Shooter",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Cyber",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Drought",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Earthquake",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Hurricane",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Influenza",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Pipeline HAZMAT",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "Vulnerability",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "Resilence Management",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Business Continuity",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Emergency Management",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Information Sharing",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Climate Change",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Physical Security",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Physical Security Organization",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Personnel Security",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Security Training",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Security Force Profile",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Physical Access Control",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Lighting, Surveillance, Intrusion Detection",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Badging and Internal Security",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Critical Dependencies",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "General Dependencies",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Information Technology",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Electricity",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Natural Gas",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Water",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Wastewater and Waste Disposal",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Communications",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Transportation",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Critical Products",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "text": "Cybersecurity",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-folder",
+                                        "children": [
+                                            {
+                                                "text": "Identify",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Protect",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Detect",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Response",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            },
+                                            {
+                                                "text": "Recovery",
+                                                "state": {
+                                                    "selected": false
+                                                },
+                                                "icon": "jstree-file"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "Consequence",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "General",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Direct Patient Care",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "Hazard Specific",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "Criticality",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder",
+                                "children": [
+                                    {
+                                        "text": "XXXXX",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "YYYYY",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    },
+                                    {
+                                        "text": "ZZZZZ",
+                                        "state": {
+                                            "selected": false
+                                        },
+                                        "icon": "jstree-file"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Archived",
+                        "state": {
+                            "selected": false,
+                            "opened": true
+                        },
+                        "icon": "jstree-folder",
+                        "children": [
+                            {
+                                "text": "2019",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "2018",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            },
+                            {
+                                "text": "2017",
+                                "state": {
+                                    "selected": false
+                                },
+                                "icon": "jstree-folder"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

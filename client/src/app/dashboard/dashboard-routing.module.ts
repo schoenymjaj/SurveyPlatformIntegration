@@ -21,7 +21,7 @@ const routes: Routes = [
     component: ExerciserComponent
   },
   {
-    path: 'survey',
+    path: 'survey/:id',
     component: SurveyComponent
   },
   {

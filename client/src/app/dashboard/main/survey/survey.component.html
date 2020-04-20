@@ -19,8 +19,14 @@ app-survey {
 }
 </style>
 
-
+<!--
 <iframe class="mnsclass" title="survey" height="1000px" width="100%" style="border:none;overflow: hidden;"
-src="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3L60R4gVcYmhkEd"></iframe>
+[src]="surveyUrl"></iframe>
+-->
+
+<iframe class="mnsclass" title="survey" height="5000px" width="100%" style="border:none;overflow: hidden;"
+[src]="getSafeSource()"></iframe>
+
+
 
 

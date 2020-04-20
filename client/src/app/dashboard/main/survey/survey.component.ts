@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer } from "@angular/platform-browser";
+import { ActivatedRoute, Router } from '@angular/router';
 
 declare var $: any;
 
@@ -9,10 +11,17 @@ declare var $: any;
 })
 export class SurveyComponent implements OnInit {
 
-  constructor() { }
+  id: string; //id of the survey
+
+  constructor(private sanitizer: DomSanitizer,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
-    var htmlText = $('iframe').html(); 
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+      console.log(this.id); // Print the parameter to the console. 
+    });      
+
   }
 
   ngAfterContentInit() {
@@ -22,5 +31,22 @@ export class SurveyComponent implements OnInit {
     var frameDOM = $('.mnsclass').contents();
     var questionTags = $('.mnsclass').attr('src')
   };
+
+  getSafeSource() {
+  
+    switch (this.id) {
+      case '5': //hospital comprehensive
+        var url = 'https://mitrepilot.iad1.qualtrics.com/jfe/form/SV_6VSaVseh1oYbBK5';
+        break;
+      case '6': //hospital lite
+        var url = 'https://mitrepilot.iad1.qualtrics.com/jfe/form/SV_1RMpcqmsZtI9XIV';
+        break;
+      default:
+        var url = "https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3L60R4gVcYmhkEd"
+        break;
+    }
+
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
 
 }

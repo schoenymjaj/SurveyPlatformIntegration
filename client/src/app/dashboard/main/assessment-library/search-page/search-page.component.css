@@ -1,7 +1,51 @@
 .group {
-    width: 60%;
+    width: 80%;
     margin:auto;
+    /*background: rgb(241, 238, 233); */
     background: rgb(241, 238, 233);
     padding: 15px;
     margin-top:12px;
 }
+
+.mat-list-item {
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.container{
+    margin-top: 10px;
+    display: flex;
+    border-style: solid;
+    border-color: black;
+}
+.fixed{
+    width: 300px;
+    /*
+    font-weight:bold;
+    font-size: large; 
+    /*
+    border-style: solid;
+    border-color: red;
+    */
+}
+.flex-item{
+    flex-grow: 1;
+    /*
+    font-weight:bold;
+    font-size: large; 
+    */
+    /*border-style: solid;
+    border-color: blue;
+    */
+}
+
+/*
+.mat-placeholder-class {
+    color: black;
+    font-weight: bold;
+}
+*/
+
+
+

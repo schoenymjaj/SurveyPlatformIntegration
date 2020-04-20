@@ -32,14 +32,31 @@
                 <!--<button mat-button class="cirds-top-menu-button" (click)="doJQuery()">JQuery</button>
                 -->
 
-                <button mat-button class="cirds-top-menu-button" (click)="viewAssessmentLibrary()">Assessment Library</button>
-
-                <!--
-                <button mat-button class="cirds-top-menu-button" (click)="viewAssessmentLibrary()">Assessment Library</button>
-                -->
+                <button mat-button class="top-menu-choice" (click)="viewDashboard()">Dashboard</button>
+             
+                <button mat-button class="top-menu-choice" [matMenuTriggerFor]="aboveMenu">Reporting</button>
+                <mat-menu #aboveMenu="matMenu" yPosition="above">
+                  <button mat-menu-item>Assessment Results 1</button>
+                  <button mat-menu-item>Assessment Results 2</button>
+                </mat-menu>                
                 
-                <!--<button mat-button class="cirds-top-menu-button" (click)="openTab('https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3L60R4gVcYmhkEd')">Survey</button>
-                -->
+                <button mat-button class="top-menu-choice" [matMenuTriggerFor]="afterMenu">Assessment</button>
+                <mat-menu #afterMenu="matMenu" xPosition="after">
+                  <button mat-menu-item (click)="viewAssessmentLibrary()">Library</button>
+                  <button mat-menu-item>Perform</button>
+                </mat-menu>
+
+                <mat-menu #appMenu="matMenu">
+                    <button mat-menu-item>Settings</button>
+                    <button mat-menu-item>Healthcare System Profile</button>
+                    <button mat-menu-item>Current Assessments</button>
+                    <button mat-menu-item>Help</button>
+                    <button mat-menu-item>About</button>
+                  </mat-menu>
+                  
+                  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
 
             </mat-toolbar-row>
         </mat-toolbar>

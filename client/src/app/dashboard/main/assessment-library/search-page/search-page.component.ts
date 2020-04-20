@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../../../../services/data.service';
 import { Assessment } from '../../../../shared/assessment';
+import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-search-page',
@@ -11,7 +13,8 @@ export class SearchPageComponent implements OnInit {
 
   Assessment: Assessment[]
   constructor(
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router, 
   ) { }
 
   ngOnInit() {
@@ -33,6 +36,14 @@ export class SearchPageComponent implements OnInit {
     }
 
     console.log(this.Assessment)
+  }
+
+  previewAssessment(id) {
+    this.router.navigate(['/dashboard/survey/' + id]);
+  }
+
+  selectChoice(event) {
+
   }
 
 }

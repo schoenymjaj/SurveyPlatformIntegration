@@ -41,3 +41,8 @@
 .mat-button.mat-primary {
     color: #000000;
 }
+
+.top-menu-choice {
+    font-size: medium;
+    font-weight: bold;
+}
