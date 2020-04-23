@@ -16,7 +16,7 @@ export class SafePipe implements PipeTransform {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'cirds-dashboard';
+  title = 'risc';
 
   constructor(private helperService: HelperService) {
   }

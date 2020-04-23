@@ -3,7 +3,7 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-cirds-dashboard',
+  selector: 'app-risc',
   templateUrl: './cirds-dashboard.component.html',
   styleUrls: ['./cirds-dashboard.component.css']
 })

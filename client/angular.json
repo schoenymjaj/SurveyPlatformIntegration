@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cirds-dashboard": {
+    "risc": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cirds-dashboard",
+            "outputPath": "dist/risc",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cirds-dashboard:build"
+            "browserTarget": "risc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cirds-dashboard:build:production"
+              "browserTarget": "risc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cirds-dashboard:build"
+            "browserTarget": "risc:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cirds-dashboard:serve"
+            "devServerTarget": "risc:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cirds-dashboard:serve:production"
+              "devServerTarget": "risc:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "cirds-dashboard"
+  "defaultProject": "risc"
 }
