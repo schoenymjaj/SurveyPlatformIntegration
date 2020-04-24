@@ -1,6 +1,6 @@
 FROM node:11.15.0-alpine as build-step
 WORKDIR /usr/src/app
-COPY package.json ./
+COPY ./client/package.json ./
 RUN npm install
 COPY . .
 RUN npm run build
